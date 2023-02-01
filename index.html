@@ -6,13 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlogDeCafé</title>
+    <meta name="description" content="pagina web de blog de cafe">
+
+    <!--PREFETCH--> <!--CARGAR UNA SEGUNDA PAGINA-->
+    <link rel="prefetch" href="nosotros.html" as="documento">
+
+    <!--PRELOAD--><!--precargar imagenes, styles, etc-->
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
 </head>
+
 
 
 <body>
@@ -32,15 +44,15 @@
 
             <nav class="navegador">
 
-                <a href="#" class="navegador_enlace">
+                <a href="/nosotros.html" class="navegador_enlace">
                     Nosotros
                 </a>
 
-                <a href="#" class="navegador_enlace">
+                <a href="/cursos.html" class="navegador_enlace">
                     Cursos
                 </a>
 
-                <a href="#" class="navegador_enlace">
+                <a href="/contacto.html" class="navegador_enlace">
                     Contancto
                 </a>
 
@@ -79,10 +91,10 @@
                 <h2 class="izquierda">Nuestro Blog</h2>
 
 
-                <article>
+                <article class="entrada_blog">
 
                     <div>
-                        <img src="/img/blog1.jpg" alt="cafe">
+                        <img loading="lazy" src="/img/blog1.jpg" alt="cafe">
                     </div>
 
                     <h3 class="izquierda">Tipos de granos de café</h3>
@@ -94,14 +106,65 @@
                         magnam, id aspernatur.
                     </p>
 
+                    <a href="/entrada_1.html">
+                        <button class="button37 button37--primario" role="button">LEER ENTRADA</button>
+                    </a>
+
                 </article>
 
-                <a href="#">
-                    <button class="button37 button37--primario" role="button">LEER ENTRADA</button>
-                </a>
 
 
-            </main>
+
+
+
+                <article class="entrada_blog">
+
+                    <div>
+                        <img loading="lazy" src="/img/blog2.jpg" alt="cafe">
+                    </div>
+
+                    <h3 class="izquierda">3 Deliciosas recetas para café</h3>
+
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut iusto nam aspernatur expedita vero
+                        quaerat debitis deleniti. Dolorum omnis fugit itaque obcaecati iusto harum beatae, repudiandae
+                        in
+                        magnam, id aspernatur.
+                    </p>
+
+                    <a href="/entrada_1.html">
+                        <button class="button37 button37--primario" role="button">LEER ENTRADA</button>
+                    </a>
+                </article>
+
+
+
+
+
+
+                <article class="entrada_blog">
+
+                    <div>
+                        <img loading="lazy" src="/img/blog3.jpg" alt="cafe">
+                    </div>
+
+                    <h3 class="izquierda">Beneficios dle café</h3>
+
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut iusto nam aspernatur expedita vero
+                        quaerat debitis deleniti. Dolorum omnis fugit itaque obcaecati iusto harum beatae, repudiandae
+                        in
+                        magnam, id aspernatur.
+                    </p>
+
+                    <a href="/entrada_1.html">
+                        <button class="button37 button37--primario" role="button">LEER ENTRADA</button>
+                    </a>
+                </article>
+
+
+
+            </main> <!--Hasta aqui el blok-->
 
 
 
@@ -119,7 +182,7 @@
                         <p class="widget-curso__label">Cupo:
                             <samp class="widget-curso__info"> 20</samp>
                         </p>
-                        <a href="#">
+                        <a href="/informacion.html">
                             <button class="button37 button37--secundario" role="button">MÁS INFORMACIÓN</button>
                         </a>
                     </li>
@@ -132,7 +195,7 @@
                         <p class="widget-curso__label">Cupo:
                             <samp class="widget-curso__info"> 20</samp>
                         </p>
-                        <a href="#">
+                        <a href="/informacion.html">
                             <button class="button37 button37--secundario" role="button">MÁS INFORMACIÓN</button>
                         </a>
                     </li>
@@ -143,6 +206,45 @@
             </aside>
         </div>
     </div> <!--fin del blog1-->
+
+
+
+    <footer class="footer">
+
+        <div class="abajo contenedor">
+
+            <div class="block1_BlogdeCafe">
+                <a class="blogdecafe" href="index.html">
+                    <h1 class="blog">Blog<samp class="decafe">DeCafé</samp></h1>
+                </a>
+            </div>
+
+
+            <nav class="navegador">
+
+                <a href="/nosotros.html" class="navegador_enlace">
+                    Nosotros
+                </a>
+
+                <a href="/cursos.html" class="navegador_enlace">
+                    Cursos
+                </a>
+
+                <a href="/contacto.html" class="navegador_enlace">
+                    Contancto
+                </a>
+
+            </nav>
+        </div>
+
+        </div>
+
+
+
+
+        </div>
+
+    </footer>
 
 
 
